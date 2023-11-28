@@ -1,14 +1,14 @@
 <!DOCTYPE HTML>
-<html lang="en" class="light" dir="ltr">
+<html lang="en" class="rust" dir="ltr">
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Introduction - RFCs book</title>
+        <title>Introduction - Polkadot Fellowship RFCs</title>
 
 
         <!-- Custom HTML head -->
         
-        <meta name="description" content="An online book of fellowship RFCs.">
+        <meta name="description" content="An online book of RFCs approved or proposed within the Polkadot Fellowship.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff">
 
@@ -29,6 +29,7 @@
         <link rel="stylesheet" href="ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="theme/rust-custom.css">
 
     </head>
     <body class="sidebar-visible no-js">
@@ -36,7 +37,7 @@
         <!-- Provide site root to javascript -->
         <script>
             var path_to_root = "";
-            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "rust" : "rust";
         </script>
 
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
@@ -61,7 +62,7 @@
             try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
             if (theme === null || theme === undefined) { theme = default_theme; }
             var html = document.querySelector('html');
-            html.classList.remove('light')
+            html.classList.remove('rust')
             html.classList.add(theme);
             var body = document.querySelector('body');
             body.classList.remove('no-js')
@@ -88,7 +89,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="introduction.html" class="active">Introduction</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">Approved</li><li class="chapter-item expanded "><a href="approved/0001-agile-coretime.html"><strong aria-hidden="true">1.</strong> RFC-1: Agile Coretime</a></li><li class="chapter-item expanded "><a href="approved/0005-coretime-interface.html"><strong aria-hidden="true">2.</strong> RFC-5: Coretime Interface</a></li><li class="chapter-item expanded "><a href="approved/0007-system-collator-selection.html"><strong aria-hidden="true">3.</strong> RFC-0007: System Collator Selection</a></li><li class="chapter-item expanded "><a href="approved/0008-parachain-bootnodes-dht.html"><strong aria-hidden="true">4.</strong> RFC-0008: Store parachain bootnodes in relay chain DHT</a></li><li class="chapter-item expanded "><a href="approved/0012-process-for-adding-new-collectives.html"><strong aria-hidden="true">5.</strong> RFC-0012: Process for Adding New System Collectives</a></li><li class="chapter-item expanded "><a href="approved/0014-improve-locking-mechanism-for-parachains.html"><strong aria-hidden="true">6.</strong> RFC-0014: Improve locking mechanism for parachains</a></li><li class="chapter-item expanded "><a href="approved/0022-adopt-encointer-runtime.html"><strong aria-hidden="true">7.</strong> RFC-0022: Adopt Encointer Runtime</a></li><li class="chapter-item expanded "><a href="approved/0032-minimal-relay.html"><strong aria-hidden="true">8.</strong> RFC-0032: Minimal Relay</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">Proposed</li><li class="chapter-item expanded "><a href="proposed/0004-remove-unnecessary-allocator-usage.html"><strong aria-hidden="true">9.</strong> RFC-0004: Remove the host-side runtime memory allocator</a></li><li class="chapter-item expanded "><a href="proposed/0006-dynamic-pricing-for-bulk-coretime-sales.html"><strong aria-hidden="true">10.</strong> RFC-0006: Dynamic Pricing for Bulk Coretime Sales</a></li><li class="chapter-item expanded "><a href="proposed/0009-improved-net-light-client-requests.html"><strong aria-hidden="true">11.</strong> RFC-0009: Improved light client requests networking protocol</a></li><li class="chapter-item expanded "><a href="proposed/000x-assethub.html"><strong aria-hidden="true">12.</strong> RFC-0000: Lowering NFT Deposits on Polkadot and Kusama Asset Hubs</a></li><li class="chapter-item expanded "><a href="proposed/0010-burn-coretime-revenue.html"><strong aria-hidden="true">13.</strong> RFC-0010: Burn Coretime Revenue</a></li><li class="chapter-item expanded "><a href="proposed/0011-add-new-path-to-account-creation-on-asset-hubs.html"><strong aria-hidden="true">14.</strong> RFC-0011: Add New Path to Account Creation on Asset Hubs</a></li><li class="chapter-item expanded "><a href="proposed/0013-prepare-blockbuilder-and-core-runtime-apis-for-mbms.html"><strong aria-hidden="true">15.</strong> RFC-0013: Prepare BlockBuilder and Core runtime APIs for MBMs</a></li><li class="chapter-item expanded "><a href="proposed/0015-market-design-revisit.html"><strong aria-hidden="true">16.</strong> RFC-0015: Market Design Revisit</a></li><li class="chapter-item expanded "><a href="proposed/0020-treasurer-track-confirmation-period-duration-modification.html"><strong aria-hidden="true">17.</strong> RFC-0020: Treasurer Track Confirmation Period Duration Modification</a></li><li class="chapter-item expanded "><a href="proposed/0026-sassafras-consensus.html"><strong aria-hidden="true">18.</strong> RFC-0026: Sassafras Consensus Protocol</a></li><li class="chapter-item expanded "><a href="proposed/0031-corejam.html"><strong aria-hidden="true">19.</strong> RFC-0031: CoreJam</a></li><li class="chapter-item expanded "><a href="proposed/0034-xcm-absolute-location-account-derivation.html"><strong aria-hidden="true">20.</strong> RFC-34: XCM Absolute Location Account Derivation</a></li><li class="chapter-item expanded "><a href="proposed/0035-conviction-voting-delegation-modifications.html"><strong aria-hidden="true">21.</strong>  # RFC-0035: Conviction Voting Delegation Modifications</a></li><li class="chapter-item expanded "><a href="proposed/0042-extrinsics-state-version.html"><strong aria-hidden="true">22.</strong> RFC-0042: Add System version that replaces StateVersion on RuntimeVersion</a></li><li class="chapter-item expanded "><a href="proposed/0043-storage-proof-size-hostfunction.html"><strong aria-hidden="true">23.</strong> RFC-0043: Introduce storage_proof_size Host Function for Improved Parachain Block Utilization</a></li><li class="chapter-item expanded "><a href="proposed/0044-rent-based-registration.html"><strong aria-hidden="true">24.</strong> RFC-0044: Rent based registration model</a></li><li class="chapter-item expanded "><a href="proposed/0046-metadata-for-offline-signers.html"><strong aria-hidden="true">25.</strong> RFC-0000: Metadata for offline signers</a></li><li class="chapter-item expanded "><a href="proposed/0047-random-assignment-of-availability-chunks.html"><strong aria-hidden="true">26.</strong> RFC-0047: Random assignment of availability chunks to validators</a></li><li class="chapter-item expanded "><a href="proposed/0048-session-keys-runtime-api.html"><strong aria-hidden="true">27.</strong> RFC-0048: Generate ownership proof for SessionKeys</a></li><li class="chapter-item expanded "><a href="proposed/0050-fellowship-salaries.html"><strong aria-hidden="true">28.</strong> RFC-0050: Fellowship Salaries</a></li><li class="chapter-item expanded "><a href="proposed/0054-remove-heap-pages.html"><strong aria-hidden="true">29.</strong> RFC-0054: Remove the concept of "heap pages" from the client</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="introduction.html" class="active">Introduction</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">Approved</li><li class="chapter-item expanded "><a href="approved/0001-agile-coretime.html"><strong aria-hidden="true">1.</strong> RFC-1: Agile Coretime</a></li><li class="chapter-item expanded "><a href="approved/0005-coretime-interface.html"><strong aria-hidden="true">2.</strong> RFC-5: Coretime Interface</a></li><li class="chapter-item expanded "><a href="approved/0007-system-collator-selection.html"><strong aria-hidden="true">3.</strong> RFC-0007: System Collator Selection</a></li><li class="chapter-item expanded "><a href="approved/0008-parachain-bootnodes-dht.html"><strong aria-hidden="true">4.</strong> RFC-0008: Store parachain bootnodes in relay chain DHT</a></li><li class="chapter-item expanded "><a href="approved/0012-process-for-adding-new-collectives.html"><strong aria-hidden="true">5.</strong> RFC-0012: Process for Adding New System Collectives</a></li><li class="chapter-item expanded "><a href="approved/0014-improve-locking-mechanism-for-parachains.html"><strong aria-hidden="true">6.</strong> RFC-0014: Improve locking mechanism for parachains</a></li><li class="chapter-item expanded "><a href="approved/0022-adopt-encointer-runtime.html"><strong aria-hidden="true">7.</strong> RFC-0022: Adopt Encointer Runtime</a></li><li class="chapter-item expanded "><a href="approved/0032-minimal-relay.html"><strong aria-hidden="true">8.</strong> RFC-0032: Minimal Relay</a></li><li class="chapter-item expanded "><a href="proposed/0004-remove-unnecessary-allocator-usage.html"><strong aria-hidden="true">9.</strong> RFC-0004: Remove the host-side runtime memory allocator</a></li><li class="chapter-item expanded "><a href="proposed/0006-dynamic-pricing-for-bulk-coretime-sales.html"><strong aria-hidden="true">10.</strong> RFC-0006: Dynamic Pricing for Bulk Coretime Sales</a></li><li class="chapter-item expanded "><a href="proposed/0009-improved-net-light-client-requests.html"><strong aria-hidden="true">11.</strong> RFC-0009: Improved light client requests networking protocol</a></li><li class="chapter-item expanded "><a href="proposed/000x-assethub.html"><strong aria-hidden="true">12.</strong> RFC-0000: Lowering NFT Deposits on Polkadot and Kusama Asset Hubs</a></li><li class="chapter-item expanded "><a href="proposed/0010-burn-coretime-revenue.html"><strong aria-hidden="true">13.</strong> RFC-0010: Burn Coretime Revenue</a></li><li class="chapter-item expanded "><a href="proposed/0011-add-new-path-to-account-creation-on-asset-hubs.html"><strong aria-hidden="true">14.</strong> RFC-0011: Add New Path to Account Creation on Asset Hubs</a></li><li class="chapter-item expanded "><a href="proposed/0013-prepare-blockbuilder-and-core-runtime-apis-for-mbms.html"><strong aria-hidden="true">15.</strong> RFC-0013: Prepare BlockBuilder and Core runtime APIs for MBMs</a></li><li class="chapter-item expanded "><a href="proposed/0015-market-design-revisit.html"><strong aria-hidden="true">16.</strong> RFC-0015: Market Design Revisit</a></li><li class="chapter-item expanded "><a href="proposed/0020-treasurer-track-confirmation-period-duration-modification.html"><strong aria-hidden="true">17.</strong> RFC-0020: Treasurer Track Confirmation Period Duration Modification</a></li><li class="chapter-item expanded "><a href="proposed/0026-sassafras-consensus.html"><strong aria-hidden="true">18.</strong> RFC-0026: Sassafras Consensus Protocol</a></li><li class="chapter-item expanded "><a href="proposed/0031-corejam.html"><strong aria-hidden="true">19.</strong> RFC-0031: CoreJam</a></li><li class="chapter-item expanded "><a href="proposed/0034-xcm-absolute-location-account-derivation.html"><strong aria-hidden="true">20.</strong> RFC-34: XCM Absolute Location Account Derivation</a></li><li class="chapter-item expanded "><a href="proposed/0035-conviction-voting-delegation-modifications.html"><strong aria-hidden="true">21.</strong>  # RFC-0035: Conviction Voting Delegation Modifications</a></li><li class="chapter-item expanded "><a href="proposed/0042-extrinsics-state-version.html"><strong aria-hidden="true">22.</strong> RFC-0042: Add System version that replaces StateVersion on RuntimeVersion</a></li><li class="chapter-item expanded "><a href="proposed/0043-storage-proof-size-hostfunction.html"><strong aria-hidden="true">23.</strong> RFC-0043: Introduce storage_proof_size Host Function for Improved Parachain Block Utilization</a></li><li class="chapter-item expanded "><a href="proposed/0044-rent-based-registration.html"><strong aria-hidden="true">24.</strong> RFC-0044: Rent based registration model</a></li><li class="chapter-item expanded "><a href="proposed/0046-metadata-for-offline-signers.html"><strong aria-hidden="true">25.</strong> RFC-0000: Metadata for offline signers</a></li><li class="chapter-item expanded "><a href="proposed/0047-assignment-of-availability-chunks.html"><strong aria-hidden="true">26.</strong> RFC-0047: Assignment of availability chunks to validators</a></li><li class="chapter-item expanded "><a href="proposed/0048-session-keys-runtime-api.html"><strong aria-hidden="true">27.</strong> RFC-0048: Generate ownership proof for SessionKeys</a></li><li class="chapter-item expanded "><a href="proposed/0050-fellowship-salaries.html"><strong aria-hidden="true">28.</strong> RFC-0050: Fellowship Salaries</a></li><li class="chapter-item expanded "><a href="proposed/0054-remove-heap-pages.html"><strong aria-hidden="true">29.</strong> RFC-0054: Remove the concept of "heap pages" from the client</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -124,22 +125,12 @@
                         <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
                             <i class="fa fa-bars"></i>
                         </label>
-                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
-                            <i class="fa fa-paint-brush"></i>
-                        </button>
-                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
-                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
-                        </ul>
                         <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
                             <i class="fa fa-search"></i>
                         </button>
                     </div>
 
-                    <h1 class="menu-title">RFCs book</h1>
+                    <h1 class="menu-title">Polkadot Fellowship RFCs</h1>
 
                     <div class="right-buttons">
                         <a href="print.html" title="Print this book" aria-label="Print this book">
@@ -171,9 +162,12 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="introduction"><a class="header" href="#introduction">Introduction</a></h1>
-<p>This book contains the RFCs of polkadot-fellows.</p>
-<p>Find the RFCs repository and the RFC process explained <a href="https://github.com/polkadot-fellows/RFCs/">here</a>.</p>
+                        <p><img width="30%" src="images/Polkadot_Logo_Horizontal_Pink_Black.svg" alt="Polkadot logo" /></p>
+<h1 id="introduction"><a class="header" href="#introduction">Introduction</a></h1>
+<p>This book contains the Polkadot Fellowship Requests for Comments (RFCs)
+detailing proposed changes to the technical implementation of the Polkadot network.</p>
+<p>See more information and details about the proces of RFCs in the <a href="https://github.com/polkadot-fellows/RFCs/">GitHub repository</a>.</p>
+<p><img width="2%" src="images/github-mark.svg" alt="GitHub logo" />&nbsp;<a href="https://github.com/polkadot-fellows/RFCs/">polkadot-fellows/RFCs</a></p>
 
                     </main>
 
