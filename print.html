@@ -180,7 +180,8 @@
 <p>This book contains the Polkadot Fellowship Requests for Comments (RFCs)
 detailing proposed changes to the technical implementation of the Polkadot network.</p>
 <p><img width="2%" src="images/github-mark.svg" alt="GitHub logo" />&nbsp;<a href="https://github.com/polkadot-fellows/RFCs/">polkadot-fellows/RFCs</a></p>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="rfc-1-agile-coretime"><a class="header" href="#rfc-1-agile-coretime">RFC-1: Agile Coretime</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><p><a href="https://github.com/polkadot-fellows/RFCs/blob/main/text/0001-agile-coretime.md">(source)</a></p>
+<h1 id="rfc-1-agile-coretime"><a class="header" href="#rfc-1-agile-coretime">RFC-1: Agile Coretime</a></h1>
 <div class="table-wrapper"><table><thead><tr><th></th><th></th></tr></thead><tbody>
 <tr><td><strong>Start Date</strong></td><td>30 June 2023</td></tr>
 <tr><td><strong>Description</strong></td><td>Agile periodic-sale-based model for assigning Coretime on the Polkadot Ubiquitous Computer.</td></tr>
@@ -678,7 +679,8 @@ InstaPoolHistory: (empty)
 </ul>
 <h2 id="prior-art-and-references"><a class="header" href="#prior-art-and-references">Prior Art and References</a></h2>
 <p>Robert Habermeier initially wrote on the subject of Polkadot blockspace-centric in the article <a href="https://www.rob.tech/polkadot-blockspace-over-blockchains/">Polkadot Blockspace over Blockchains</a>. While not going into details, the article served as an early reframing piece for moving beyond one-slot-per-chain models and building out secondary market infrastructure for resource allocation.</p>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="rfc-5-coretime-interface"><a class="header" href="#rfc-5-coretime-interface">RFC-5: Coretime Interface</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><p><a href="https://github.com/polkadot-fellows/RFCs/blob/main/text/0005-coretime-interface.md">(source)</a></p>
+<h1 id="rfc-5-coretime-interface"><a class="header" href="#rfc-5-coretime-interface">RFC-5: Coretime Interface</a></h1>
 <div class="table-wrapper"><table><thead><tr><th></th><th></th></tr></thead><tbody>
 <tr><td><strong>Start Date</strong></td><td>06 July 2023</td></tr>
 <tr><td><strong>Description</strong></td><td>Interface for manipulating the usage of cores on the Polkadot Ubiquitous Computer.</td></tr>
@@ -795,7 +797,8 @@ assert_eq!(targets.iter().map(|x| x.1).sum(), 57600);
 <p>None at present.</p>
 <h2 id="prior-art-and-references-1"><a class="header" href="#prior-art-and-references-1">Prior Art and References</a></h2>
 <p>None.</p>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="rfc-0007-system-collator-selection"><a class="header" href="#rfc-0007-system-collator-selection">RFC-0007: System Collator Selection</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><p><a href="https://github.com/polkadot-fellows/RFCs/blob/main/text/0007-system-collator-selection.md">(source)</a></p>
+<h1 id="rfc-0007-system-collator-selection"><a class="header" href="#rfc-0007-system-collator-selection">RFC-0007: System Collator Selection</a></h1>
 <div class="table-wrapper"><table><thead><tr><th></th><th></th></tr></thead><tbody>
 <tr><td><strong>Start Date</strong></td><td>07 July 2023</td></tr>
 <tr><td><strong>Description</strong></td><td>Mechanism for selecting collators of system chains.</td></tr>
@@ -925,7 +928,8 @@ migration.</p>
 <h2 id="future-directions-and-related-material-2"><a class="header" href="#future-directions-and-related-material-2">Future Directions and Related Material</a></h2>
 <p>There may exist in the future system chains for which this model of collator selection is not
 appropriate. These chains should be evaluated on a case-by-case basis.</p>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="rfc-0008-store-parachain-bootnodes-in-relay-chain-dht"><a class="header" href="#rfc-0008-store-parachain-bootnodes-in-relay-chain-dht">RFC-0008: Store parachain bootnodes in relay chain DHT</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><p><a href="https://github.com/polkadot-fellows/RFCs/blob/main/text/0008-parachain-bootnodes-dht.md">(source)</a></p>
+<h1 id="rfc-0008-store-parachain-bootnodes-in-relay-chain-dht"><a class="header" href="#rfc-0008-store-parachain-bootnodes-in-relay-chain-dht">RFC-0008: Store parachain bootnodes in relay chain DHT</a></h1>
 <div class="table-wrapper"><table><thead><tr><th></th><th></th></tr></thead><tbody>
 <tr><td><strong>Start Date</strong></td><td>2023-07-14</td></tr>
 <tr><td><strong>Description</strong></td><td>Parachain bootnodes shall register themselves in the DHT of the relay chain</td></tr>
@@ -1012,7 +1016,8 @@ If this every becomes a problem, this value of 20 is an arbitrary constant that 
 <p>While it fundamentally doesn't change much to this RFC, using <code>BabeApi_currentEpoch</code> and <code>BabeApi_nextEpoch</code> might be inappropriate. I'm not familiar enough with good practices within the runtime to have an opinion here. Should it be an entirely new pallet?</p>
 <h2 id="future-directions-and-related-material-3"><a class="header" href="#future-directions-and-related-material-3">Future Directions and Related Material</a></h2>
 <p>It is possible that in the future a client could connect to a parachain without having to rely on a trusted parachain specification.</p>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="rfc-0012-process-for-adding-new-system-collectives"><a class="header" href="#rfc-0012-process-for-adding-new-system-collectives">RFC-0012: Process for Adding New System Collectives</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><p><a href="https://github.com/polkadot-fellows/RFCs/blob/main/text/0012-process-for-adding-new-collectives.md">(source)</a></p>
+<h1 id="rfc-0012-process-for-adding-new-system-collectives"><a class="header" href="#rfc-0012-process-for-adding-new-system-collectives">RFC-0012: Process for Adding New System Collectives</a></h1>
 <div class="table-wrapper"><table><thead><tr><th></th><th></th></tr></thead><tbody>
 <tr><td><strong>Start Date</strong></td><td>24 July 2023</td></tr>
 <tr><td><strong>Description</strong></td><td>A process for adding new (and removing existing) system collectives.</td></tr>
@@ -1097,7 +1102,8 @@ ones.</p>
 <a href="https://forum.polkadot.network/t/calling-polkadot-core-developers/506">initial forum post</a>.</p>
 <h2 id="unresolved-questions-2"><a class="header" href="#unresolved-questions-2">Unresolved Questions</a></h2>
 <p>None at this time.</p>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="rfc-0014-improve-locking-mechanism-for-parachains"><a class="header" href="#rfc-0014-improve-locking-mechanism-for-parachains">RFC-0014: Improve locking mechanism for parachains</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><p><a href="https://github.com/polkadot-fellows/RFCs/blob/main/text/0014-improve-locking-mechanism-for-parachains.md">(source)</a></p>
+<h1 id="rfc-0014-improve-locking-mechanism-for-parachains"><a class="header" href="#rfc-0014-improve-locking-mechanism-for-parachains">RFC-0014: Improve locking mechanism for parachains</a></h1>
 <div class="table-wrapper"><table><thead><tr><th></th><th></th></tr></thead><tbody>
 <tr><td><strong>Start Date</strong></td><td>July 25, 2023</td></tr>
 <tr><td><strong>Description</strong></td><td>Improve locking mechanism for parachains</td></tr>
@@ -1208,7 +1214,8 @@ ones.</p>
 <sup class="footnote-reference"><a href="#4">4</a></sup>: https://github.com/paritytech/polkadot/blob/994af3de79af25544bf39644844cbe70a7b4d695/runtime/common/src/paras_registrar.rs#L473-L475
 <sup class="footnote-reference"><a href="#5">5</a></sup>: https://github.com/paritytech/polkadot/blob/994af3de79af25544bf39644844cbe70a7b4d695/runtime/common/src/paras_registrar.rs#L333-L340</p>
 </div>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="rfc-0022-adopt-encointer-runtime"><a class="header" href="#rfc-0022-adopt-encointer-runtime">RFC-0022: Adopt Encointer Runtime</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><p><a href="https://github.com/polkadot-fellows/RFCs/blob/main/text/0022-adopt-encointer-runtime.md">(source)</a></p>
+<h1 id="rfc-0022-adopt-encointer-runtime"><a class="header" href="#rfc-0022-adopt-encointer-runtime">RFC-0022: Adopt Encointer Runtime</a></h1>
 <div class="table-wrapper"><table><thead><tr><th></th><th></th></tr></thead><tbody>
 <tr><td><strong>Start Date</strong></td><td>Aug 22nd 2023</td></tr>
 <tr><td><strong>Description</strong></td><td>Permanently move the Encointer runtime into the Fellowship runtimes repo.</td></tr>
@@ -1248,7 +1255,8 @@ ones.</p>
 <p>None identified</p>
 <h2 id="future-directions-and-related-material-5"><a class="header" href="#future-directions-and-related-material-5">Future Directions and Related Material</a></h2>
 <p>More info on Encointer: <a href="https://encointer.org">encointer.org</a></p>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="rfc-0032-minimal-relay"><a class="header" href="#rfc-0032-minimal-relay">RFC-0032: Minimal Relay</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><p><a href="https://github.com/polkadot-fellows/RFCs/blob/main/text/0032-minimal-relay.md">(source)</a></p>
+<h1 id="rfc-0032-minimal-relay"><a class="header" href="#rfc-0032-minimal-relay">RFC-0032: Minimal Relay</a></h1>
 <div class="table-wrapper"><table><thead><tr><th></th><th></th></tr></thead><tbody>
 <tr><td><strong>Start Date</strong></td><td>20 September 2023</td></tr>
 <tr><td><strong>Description</strong></td><td>Proposal to minimise Relay Chain functionality.</td></tr>
