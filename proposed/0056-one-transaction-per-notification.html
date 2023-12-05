@@ -4,7 +4,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>RFC-0042: Add System version that replaces StateVersion on RuntimeVersion - Polkadot Fellowship RFCs</title>
+        <title>RFC-0056: Enforce only one transaction per notification - Polkadot Fellowship RFCs</title>
 
 
         <!-- Custom HTML head -->
@@ -90,7 +90,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../introduction.html">Introduction</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">Approved</li><li class="chapter-item expanded "><a href="../approved/0001-agile-coretime.html">RFC-1: Agile Coretime</a></li><li class="chapter-item expanded "><a href="../approved/0005-coretime-interface.html">RFC-5: Coretime Interface</a></li><li class="chapter-item expanded "><a href="../approved/0007-system-collator-selection.html">RFC-0007: System Collator Selection</a></li><li class="chapter-item expanded "><a href="../approved/0008-parachain-bootnodes-dht.html">RFC-0008: Store parachain bootnodes in relay chain DHT</a></li><li class="chapter-item expanded "><a href="../approved/0012-process-for-adding-new-collectives.html">RFC-0012: Process for Adding New System Collectives</a></li><li class="chapter-item expanded "><a href="../approved/0014-improve-locking-mechanism-for-parachains.html">RFC-0014: Improve locking mechanism for parachains</a></li><li class="chapter-item expanded "><a href="../approved/0022-adopt-encointer-runtime.html">RFC-0022: Adopt Encointer Runtime</a></li><li class="chapter-item expanded "><a href="../approved/0032-minimal-relay.html">RFC-0032: Minimal Relay</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">Proposed</li><li class="chapter-item expanded "><a href="../proposed/0004-remove-unnecessary-allocator-usage.html">RFC-0004: Remove the host-side runtime memory allocator</a></li><li class="chapter-item expanded "><a href="../proposed/0006-dynamic-pricing-for-bulk-coretime-sales.html">RFC-0006: Dynamic Pricing for Bulk Coretime Sales</a></li><li class="chapter-item expanded "><a href="../proposed/0009-improved-net-light-client-requests.html">RFC-0009: Improved light client requests networking protocol</a></li><li class="chapter-item expanded "><a href="../proposed/000x-assethub.html">RFC-0000: Lowering NFT Deposits on Polkadot and Kusama Asset Hubs</a></li><li class="chapter-item expanded "><a href="../proposed/0010-burn-coretime-revenue.html">RFC-0010: Burn Coretime Revenue</a></li><li class="chapter-item expanded "><a href="../proposed/0011-add-new-path-to-account-creation-on-asset-hubs.html">RFC-0011: Add New Path to Account Creation on Asset Hubs</a></li><li class="chapter-item expanded "><a href="../proposed/0013-prepare-blockbuilder-and-core-runtime-apis-for-mbms.html">RFC-0013: Prepare BlockBuilder and Core runtime APIs for MBMs</a></li><li class="chapter-item expanded "><a href="../proposed/0015-market-design-revisit.html">RFC-0015: Market Design Revisit</a></li><li class="chapter-item expanded "><a href="../proposed/0020-treasurer-track-confirmation-period-duration-modification.html">RFC-0020: Treasurer Track Confirmation Period Duration Modification</a></li><li class="chapter-item expanded "><a href="../proposed/0026-sassafras-consensus.html">RFC-0026: Sassafras Consensus Protocol</a></li><li class="chapter-item expanded "><a href="../proposed/0031-corejam.html">RFC-0031: CoreJam</a></li><li class="chapter-item expanded "><a href="../proposed/0034-xcm-absolute-location-account-derivation.html">RFC-34: XCM Absolute Location Account Derivation</a></li><li class="chapter-item expanded "><a href="../proposed/0035-conviction-voting-delegation-modifications.html"> # RFC-0035: Conviction Voting Delegation Modifications</a></li><li class="chapter-item expanded "><a href="../proposed/0042-extrinsics-state-version.html" class="active">RFC-0042: Add System version that replaces StateVersion on RuntimeVersion</a></li><li class="chapter-item expanded "><a href="../proposed/0043-storage-proof-size-hostfunction.html">RFC-0043: Introduce storage_proof_size Host Function for Improved Parachain Block Utilization</a></li><li class="chapter-item expanded "><a href="../proposed/0044-rent-based-registration.html">RFC-0044: Rent based registration model</a></li><li class="chapter-item expanded "><a href="../proposed/0046-metadata-for-offline-signers.html">RFC-0000: Metadata for offline signers</a></li><li class="chapter-item expanded "><a href="../proposed/0047-assignment-of-availability-chunks.html">RFC-0047: Assignment of availability chunks to validators</a></li><li class="chapter-item expanded "><a href="../proposed/0048-session-keys-runtime-api.html">RFC-0048: Generate ownership proof for SessionKeys</a></li><li class="chapter-item expanded "><a href="../proposed/0050-fellowship-salaries.html">RFC-0050: Fellowship Salaries</a></li><li class="chapter-item expanded "><a href="../proposed/0054-remove-heap-pages.html">RFC-0054: Remove the concept of "heap pages" from the client</a></li><li class="chapter-item expanded "><a href="../proposed/0056-one-transaction-per-notification.html">RFC-0056: Enforce only one transaction per notification</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../introduction.html">Introduction</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">Approved</li><li class="chapter-item expanded "><a href="../approved/0001-agile-coretime.html">RFC-1: Agile Coretime</a></li><li class="chapter-item expanded "><a href="../approved/0005-coretime-interface.html">RFC-5: Coretime Interface</a></li><li class="chapter-item expanded "><a href="../approved/0007-system-collator-selection.html">RFC-0007: System Collator Selection</a></li><li class="chapter-item expanded "><a href="../approved/0008-parachain-bootnodes-dht.html">RFC-0008: Store parachain bootnodes in relay chain DHT</a></li><li class="chapter-item expanded "><a href="../approved/0012-process-for-adding-new-collectives.html">RFC-0012: Process for Adding New System Collectives</a></li><li class="chapter-item expanded "><a href="../approved/0014-improve-locking-mechanism-for-parachains.html">RFC-0014: Improve locking mechanism for parachains</a></li><li class="chapter-item expanded "><a href="../approved/0022-adopt-encointer-runtime.html">RFC-0022: Adopt Encointer Runtime</a></li><li class="chapter-item expanded "><a href="../approved/0032-minimal-relay.html">RFC-0032: Minimal Relay</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">Proposed</li><li class="chapter-item expanded "><a href="../proposed/0004-remove-unnecessary-allocator-usage.html">RFC-0004: Remove the host-side runtime memory allocator</a></li><li class="chapter-item expanded "><a href="../proposed/0006-dynamic-pricing-for-bulk-coretime-sales.html">RFC-0006: Dynamic Pricing for Bulk Coretime Sales</a></li><li class="chapter-item expanded "><a href="../proposed/0009-improved-net-light-client-requests.html">RFC-0009: Improved light client requests networking protocol</a></li><li class="chapter-item expanded "><a href="../proposed/000x-assethub.html">RFC-0000: Lowering NFT Deposits on Polkadot and Kusama Asset Hubs</a></li><li class="chapter-item expanded "><a href="../proposed/0010-burn-coretime-revenue.html">RFC-0010: Burn Coretime Revenue</a></li><li class="chapter-item expanded "><a href="../proposed/0011-add-new-path-to-account-creation-on-asset-hubs.html">RFC-0011: Add New Path to Account Creation on Asset Hubs</a></li><li class="chapter-item expanded "><a href="../proposed/0013-prepare-blockbuilder-and-core-runtime-apis-for-mbms.html">RFC-0013: Prepare BlockBuilder and Core runtime APIs for MBMs</a></li><li class="chapter-item expanded "><a href="../proposed/0015-market-design-revisit.html">RFC-0015: Market Design Revisit</a></li><li class="chapter-item expanded "><a href="../proposed/0020-treasurer-track-confirmation-period-duration-modification.html">RFC-0020: Treasurer Track Confirmation Period Duration Modification</a></li><li class="chapter-item expanded "><a href="../proposed/0026-sassafras-consensus.html">RFC-0026: Sassafras Consensus Protocol</a></li><li class="chapter-item expanded "><a href="../proposed/0031-corejam.html">RFC-0031: CoreJam</a></li><li class="chapter-item expanded "><a href="../proposed/0034-xcm-absolute-location-account-derivation.html">RFC-34: XCM Absolute Location Account Derivation</a></li><li class="chapter-item expanded "><a href="../proposed/0035-conviction-voting-delegation-modifications.html"> # RFC-0035: Conviction Voting Delegation Modifications</a></li><li class="chapter-item expanded "><a href="../proposed/0042-extrinsics-state-version.html">RFC-0042: Add System version that replaces StateVersion on RuntimeVersion</a></li><li class="chapter-item expanded "><a href="../proposed/0043-storage-proof-size-hostfunction.html">RFC-0043: Introduce storage_proof_size Host Function for Improved Parachain Block Utilization</a></li><li class="chapter-item expanded "><a href="../proposed/0044-rent-based-registration.html">RFC-0044: Rent based registration model</a></li><li class="chapter-item expanded "><a href="../proposed/0046-metadata-for-offline-signers.html">RFC-0000: Metadata for offline signers</a></li><li class="chapter-item expanded "><a href="../proposed/0047-assignment-of-availability-chunks.html">RFC-0047: Assignment of availability chunks to validators</a></li><li class="chapter-item expanded "><a href="../proposed/0048-session-keys-runtime-api.html">RFC-0048: Generate ownership proof for SessionKeys</a></li><li class="chapter-item expanded "><a href="../proposed/0050-fellowship-salaries.html">RFC-0050: Fellowship Salaries</a></li><li class="chapter-item expanded "><a href="../proposed/0054-remove-heap-pages.html">RFC-0054: Remove the concept of "heap pages" from the client</a></li><li class="chapter-item expanded "><a href="../proposed/0056-one-transaction-per-notification.html" class="active">RFC-0056: Enforce only one transaction per notification</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -174,95 +174,80 @@
 
                 <div id="content" class="content">
                     <main>
-                        <p><a href="https://github.com/polkadot-fellows/RFCs/pull/42">(source)</a></p>
-<h1 id="rfc-0042-add-system-version-that-replaces-stateversion-on-runtimeversion"><a class="header" href="#rfc-0042-add-system-version-that-replaces-stateversion-on-runtimeversion">RFC-0042: Add System version that replaces StateVersion on RuntimeVersion</a></h1>
+                        <p><a href="https://github.com/polkadot-fellows/RFCs/pull/56">(source)</a></p>
+<h1 id="rfc-0056-enforce-only-one-transaction-per-notification"><a class="header" href="#rfc-0056-enforce-only-one-transaction-per-notification">RFC-0056: Enforce only one transaction per notification</a></h1>
 <div class="table-wrapper"><table><thead><tr><th></th><th></th></tr></thead><tbody>
-<tr><td><strong>Start Date</strong></td><td>25th October 2023</td></tr>
-<tr><td><strong>Description</strong></td><td>Add System Version and remove State Version</td></tr>
-<tr><td><strong>Authors</strong></td><td>Vedhavyas Singareddi</td></tr>
+<tr><td><strong>Start Date</strong></td><td>2023-11-30</td></tr>
+<tr><td><strong>Description</strong></td><td>Modify the transactions notifications protocol to always send only one transaction at a time</td></tr>
+<tr><td><strong>Authors</strong></td><td>Pierre Krieger</td></tr>
 </tbody></table>
 </div>
 <h2 id="summary"><a class="header" href="#summary">Summary</a></h2>
-<p>At the moment, we have <code>system_version</code> field on <code>RuntimeVersion</code> that derives which state version is used for the
-Storage.
-We have a use case where we want extrinsics root is derived using <code>StateVersion::V1</code>. Without defining a new field
-under <code>RuntimeVersion</code>,
-we would like to propose adding <code>system_version</code> that can be used to derive both storage and extrinsic state version.</p>
+<p>When two peers connect to each other, they open (amongst other things) a so-called &quot;notifications protocol&quot; substream dedicated to gossiping transactions to each other.</p>
+<p>Each notification on this substream currently consists in a SCALE-encoded <code>Vec&lt;Transaction&gt;</code> where <code>Transaction</code> is defined in the runtime.</p>
+<p>This RFC proposes to modify the format of the notification to become <code>(Compact(1), Transaction)</code>. This maintains backwards compatibility, as this new format decodes as a <code>Vec</code> of length equal to 1.</p>
 <h2 id="motivation"><a class="header" href="#motivation">Motivation</a></h2>
-<p>Since the extrinsic state version is always <code>StateVersion::V0</code>, deriving extrinsic root requires full extrinsic data.
-This would be problematic when we need to verify the extrinsics root if the extrinsic sizes are bigger. This problem is
-further explored in https://github.com/polkadot-fellows/RFCs/issues/19</p>
-<p>For <code>Subspace</code> project, we have an enshrined rollups called <code>Domain</code> with optimistic verification and Fraud proofs are
-used to detect malicious behavior.
-One of the <code>Fraud proof</code> variant is to derive <code>Domain</code> block extrinsic root on <code>Subspace</code>'s consensus chain.
-Since <code>StateVersion::V0</code> requires full extrinsic data, we are forced to pass all the extrinsics through the Fraud proof.
-One of the main challenge here is some extrinsics could be big enough that this variant of Fraud proof may not be
-included in the Consensus block due to Block's weight restriction.
-If the extrinsic root is derived using <code>StateVersion::V1</code>, then we do not need to pass the full extrinsic data but
-rather at maximum, 32 byte of extrinsic data.</p>
-<h2 id="stakeholders"><a class="header" href="#stakeholders">Stakeholders</a></h2>
+<p>There exists three motivations behind this change:</p>
 <ul>
-<li>Technical Fellowship, in its role of maintaining system runtimes.</li>
+<li>
+<p>It is technically impossible to decode a SCALE-encoded <code>Vec&lt;Transaction&gt;</code> into a list of SCALE-encoded transactions without knowing how to decode a <code>Transaction</code>. That's because a <code>Vec&lt;Transaction&gt;</code> consists in several <code>Transaction</code>s one after the other in memory, without any delimiter that indicates the end of a transaction and the start of the next. Unfortunately, the format of a <code>Transaction</code> is runtime-specific. This means that the code that receives notifications is necessarily tied to a specific runtime, and it is not possible to write runtime-agnostic code.</p>
+</li>
+<li>
+<p>Notifications protocols are already designed to be optimized to send many items. Currently, when it comes to transactions, each item is a <code>Vec&lt;Transaction&gt;</code> that consists in multiple sub-items of type <code>Transaction</code>. This two-steps hierarchy is completely unnecessary, and was originally written at a time when the networking protocol of Substrate didn't have proper multiplexing.</p>
+</li>
+<li>
+<p>It makes the implementation way more straight-forward by not having to repeat code related to back-pressure. See explanations below.</p>
+</li>
 </ul>
+<h2 id="stakeholders"><a class="header" href="#stakeholders">Stakeholders</a></h2>
+<p>Low-level developers.</p>
 <h2 id="explanation"><a class="header" href="#explanation">Explanation</a></h2>
-<p>In order to use project specific StateVersion for extrinsic roots, we proposed
-an <a href="https://github.com/paritytech/polkadot-sdk/pull/1691">implementation</a> that introduced
-parameter to <code>frame_system::Config</code> but that unfortunately did not feel correct.
-So we would like to <a href="https://github.com/paritytech/polkadot-sdk/pull/1968">propose</a> adding this change to
-the <code>RuntimeVersion</code>
-object. The system version, if introduced, will be used to derive both storage and extrinsic state version.
-If system version is <code>0</code>, then both Storage and Extrinsic State version would use V0.
-If system version is <code>1</code>, then Storage State version would use V1 and Extrinsic State version would use V0.
-If system version is <code>2</code>, then both Storage and Extrinsic State version would use V1.</p>
-<p>If implemented, the new <code>RuntimeVersion</code> definition would look something similar to</p>
-<pre><pre class="playground"><code class="language-rust"><span class="boring">#![allow(unused)]
-</span><span class="boring">fn main() {
-</span>/// Runtime version (Rococo).
-#[sp_version::runtime_version]
-pub const VERSION: RuntimeVersion = RuntimeVersion {
-		spec_name: create_runtime_str!(&quot;rococo&quot;),
-		impl_name: create_runtime_str!(&quot;parity-rococo-v2.0&quot;),
-		authoring_version: 0,
-		spec_version: 10020,
-		impl_version: 0,
-		apis: RUNTIME_API_VERSIONS,
-		transaction_version: 22,
-		system_version: 1,
-	};
-<span class="boring">}</span></code></pre></pre>
+<p>To give an example, if you send one notification with three transactions, the bytes that are sent on the wire are:</p>
+<pre><code>concat(
+    leb128(total-size-in-bytes-of-the-rest),
+    scale(compact(3)), scale(transaction1), scale(transaction2), scale(transaction3)
+)
+</code></pre>
+<p>But you can also send three notifications of one transaction each, in which case it is:</p>
+<pre><code>concat(
+    leb128(size(scale(transaction1)) + 1), scale(compact(1)), scale(transaction1),
+    leb128(size(scale(transaction2)) + 1), scale(compact(1)), scale(transaction2),
+    leb128(size(scale(transaction3)) + 1), scale(compact(1)), scale(transaction3)
+)
+</code></pre>
+<p>Right now the sender can choose which of the two encoding to use. This RFC proposes to make the second encoding mandatory.</p>
+<p>The format of the notification would become a SCALE-encoded <code>(Compact(1), Transaction)</code>.
+A SCALE-compact encoded <code>1</code> is one byte of value <code>4</code>. In other words, the format of the notification would become <code>concat(&amp;[4], scale_encoded_transaction)</code>.
+This is equivalent to forcing the <code>Vec&lt;Transaction&gt;</code> to always have a length of 1, and I expect the Substrate implementation to simply modify the sending side to add a <code>for</code> loop that sends one notification per item in the <code>Vec</code>.</p>
+<p>As explained in the motivation section, this allows extracting <code>scale(transaction)</code> items without having to know how to decode them.</p>
+<p>By &quot;flattening&quot; the two-steps hierarchy, an implementation only needs to back-pressure individual notifications rather than back-pressure notifications and transactions within notifications.</p>
 <h2 id="drawbacks"><a class="header" href="#drawbacks">Drawbacks</a></h2>
-<p>There should be no drawbacks as it would replace <code>state_version</code> with same behavior but documentation should be updated
-so that chains know which <code>system_version</code> to use.</p>
+<p>This RFC chooses to maintain backwards compatibility at the cost of introducing a very small wart (the <code>Compact(1)</code>).</p>
+<p>An alternative could be to introduce a new version of the transactions notifications protocol that sends one <code>Transaction</code> per notification, but this is significantly more complicated to implement and can always be done later in case the <code>Compact(1)</code> is bothersome.</p>
 <h2 id="testing-security-and-privacy"><a class="header" href="#testing-security-and-privacy">Testing, Security, and Privacy</a></h2>
-<p>AFAIK, should not have any impact on the security or privacy.</p>
+<p>Irrelevant.</p>
 <h2 id="performance-ergonomics-and-compatibility"><a class="header" href="#performance-ergonomics-and-compatibility">Performance, Ergonomics, and Compatibility</a></h2>
-<p>These changes should be compatible for existing chains if they use <code>state_version</code> value for <code>system_verision</code>.</p>
 <h3 id="performance"><a class="header" href="#performance">Performance</a></h3>
-<p>I do not believe there is any performance hit with this change.</p>
+<p>Irrelevant.</p>
 <h3 id="ergonomics"><a class="header" href="#ergonomics">Ergonomics</a></h3>
-<p>This does not break any exposed Apis.</p>
+<p>Irrelevant.</p>
 <h3 id="compatibility"><a class="header" href="#compatibility">Compatibility</a></h3>
-<p>This change should not break any compatibility.</p>
+<p>The change is backwards compatible if done in two steps: modify the sender to always send one transaction per notification, then, after a while, modify the receiver to enforce the new format.</p>
 <h2 id="prior-art-and-references"><a class="header" href="#prior-art-and-references">Prior Art and References</a></h2>
-<p>We <a href="https://github.com/paritytech/polkadot-sdk/pull/1691">proposed</a> introducing a similar change by introducing a
-parameter to <code>frame_system::Config</code> but did not feel that
-is the correct way of introducing this change.</p>
+<p>Irrelevant.</p>
 <h2 id="unresolved-questions"><a class="header" href="#unresolved-questions">Unresolved Questions</a></h2>
-<p>I do not have any specific questions about this change at the moment.</p>
+<p>None.</p>
 <h2 id="future-directions-and-related-material"><a class="header" href="#future-directions-and-related-material">Future Directions and Related Material</a></h2>
-<p>IMO, this change is pretty self-contained and there won't be any future work necessary. </p>
+<p>None. This is a simple isolated change.</p>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="../proposed/0035-conviction-voting-delegation-modifications.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="../proposed/0054-remove-heap-pages.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
 
-                            <a rel="next prefetch" href="../proposed/0043-storage-proof-size-hostfunction.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                                <i class="fa fa-angle-right"></i>
-                            </a>
 
                         <div style="clear: both"></div>
                     </nav>
@@ -270,13 +255,10 @@ is the correct way of introducing this change.</p>
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="../proposed/0035-conviction-voting-delegation-modifications.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="../proposed/0054-remove-heap-pages.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
 
-                    <a rel="next prefetch" href="../proposed/0043-storage-proof-size-hostfunction.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                        <i class="fa fa-angle-right"></i>
-                    </a>
             </nav>
 
         </div>
